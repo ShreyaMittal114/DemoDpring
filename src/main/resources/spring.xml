@@ -10,12 +10,26 @@
 
 
 
-    <bean id = "alien" class = "org.example.Alien">
+    <bean id = "alien" class = "org.example.Alien"   autowire ="byType">
+   <!--   <property name="age"  value="12" />    setter injection />-->
+        <!--     <constructor-arg value="14"/>    cosntructor injection />-->
+        <!--   <property name="laptop"  ref="lap1" />   />-->
+        <!--  <constructor-arg ref="lap1"/>  />-->
+        <!--  <property name="comp"  ref="lap1" /> />-->
 
-    </bean>
 
-        <bean id = "laptop" class = "org.example.Laptop">
+     </bean>
 
-        </bean>
+         <bean id = "alien1" class = "org.example.Alien">
 
-    </beans>
+         </bean>
+
+         <bean id = "lap1" class = "org.example.Laptop"  primary="true" >
+
+         </bean>
+
+         <bean id = "desk1" class = "org.example.Dekstop">
+
+         </bean>
+
+     </beans>
